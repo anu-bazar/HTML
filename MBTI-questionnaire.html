@@ -2,14 +2,14 @@
 <html>
 <head>
 	<title>MBTI Personality Test</title>
+    
 </head>
 <body>
+    
 	<h1>MBTI Personality Test</h1>
-	<p>MBTI stands for Myers-Briggs Type Indicator, a personality assessment tool that helps people understand their psychological preferences in how they perceive the world and make decisions. Based on the theory of psychological types introduced by Carl Jung, the MBTI categorizes individuals into 16 personality types based on four dichotomies: Introversion/Extraversion, Intuition/Sensing, Feeling/Thinking, and Judging/Perceiving.
-
-Each dichotomy represents a continuum between two opposite poles. For example, Introversion represents a preference for focusing on one's inner world, while Extraversion represents a preference for focusing on the outer world. Based on their responses to a series of questions, the MBTI assigns individuals a four-letter type that describes their personality preferences. These preferences can provide insight into how individuals interact with others, process information, and make decisions.
+	<p>MBTI stands for Myers-Briggs Type Indicator
 	Answer the following questions to determine your MBTI personality type:</p>
-	<form action="results.html" method="post">
+	<form id="quizform">
 		<h2>Question 1</h2>
 		<label>Do you prefer to focus on the outer world or on your own inner world?</label><br>
 		<input type="radio" name="question1" value="E"> Strongly prefer to focus on the outer world<br>
@@ -38,7 +38,9 @@ Each dichotomy represents a continuum between two opposite poles. For example, I
 		<input type="radio" name="question4" value="P"> Slightly prefer a more flexible and spontaneous lifestyle<br>
 		<input type="radio" name="question4" value="J"> Strongly prefer a more flexible and spontaneous lifestyle<br>
 
-		<input type="submit" value="Submit">
+		<input type="button" id="submit-button" value="Submit">
 	</form>
+	<script src="backend.js"></script>
+	<p id="result"></p>
 </body>
 </html>
