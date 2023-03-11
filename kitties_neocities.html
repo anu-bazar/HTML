@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fun Facts About Kitties</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #FDD;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			margin: 0;
+			font-size: 48px;
+			text-shadow: 2px 2px #999;
+		}
+		img {
+			display: block;
+			margin: 20px auto;
+			max-width: 100%;
+		}
+		section {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		form {
+			margin: 20px 0;
+			padding: 20px;
+			background-color: #EEE;
+			border: 2px solid #DDD;
+			border-radius: 10px;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		input[type="radio"] {
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Kitties are the Best!</h1>
+		<img src="https://i.kym-cdn.com/photos/images/newsfeed/002/205/323/176.jpg" alt="hehecat">
+	</header>
+
+	<section>
+		<h2>Fun Facts About Kitties</h2>
+
+		<p>Kitties are the cutest creatures on the planet! Did you know that:</p>
+
+		<ul>
+			<li>Kitties have retractable claws that help them climb trees and catch prey.</li>
+			<li>Kitties can jump up to six times their own body length in a single bound.</li>
+			<li>Kitties can purr at a frequency of 25 to 150 vibrations per second.</li>
+			<li>Kitties spend up to 50% of their waking hours grooming themselves.</li>
+			<li>Kitties have a special organ in their mouth called the Jacobson's organ that allows them to taste and smell at the same time.</li>
+			<li>Kitties can destroy things with their laser eyes.</li>
+		</ul>
+
+		<form>
+			<h3>Which kitty do you like the most?</h3>
+			<p>Let us know by selecting one of the options below:</p>
+
+			<label><input type="radio" name="kitty" value="orange">Orange Kitty</label>
+			<label><input type="radio" name="kitty" value="black">Black Kitty</label>
+			<label><input type="radio" name="kitty" value="white">White Kitty</label>
+			<label><input type="radio" name="kitty" value="calico">Calico Kitty</label>
+
+			<p>Submit your answer to see the results:</p>
+			<button type="submit">Submit</button>
+		</form>
+
+		<p>According to our totally made-up statistics, <span id="result"></span> of people prefer the <span id="winner"></span> kitty!</p>
+	
+	</section>
+	<section>
+	<h2>Fun(nier) Facts About Kitties</h2>
+	<p>
+	  <ul>
+	    <li>Cats are fascinating animals with a rich history of domestication. They are known for their agility, independence, and affectionate personalities. One well-known fact about cats is that they are obligate carnivores, meaning that they require a diet rich in animal protein to thrive. Scientific research has also shown that cats have a unique ability to detect the Earth's magnetic field, allowing them to navigate and orient themselves more effectively.</li>
+
+      <li>However, recent scientific studies have also uncovered some surprising facts about cats. For instance, researchers have discovered that cats can communicate with humans using a complex system of purrs, meows, and tail movements. Furthermore, studies have shown that cats are actually capable of telekinesis, allowing them to move objects with their minds.</li>
+
+      <li>Additionally, scientific research has revealed that cats possess a sixth sense, allowing them to see into the future and predict impending danger. They are also capable of time travel, with the ability to transport themselves to different points in history at will. They are also known to feed solely on cheezburgerz, a recent scientific paper from planet Mars suggests.</li>
+
+      <li>But before you get too excited, it's important to note that all of these so-called "facts" are nothing more than a playful joke. They do not possess telekinetic or time-traveling abilities. Nevertheless, they remain beloved pets for millions of people around the world, and for good reason. So next time you're cuddling with your furry feline friend, take a moment to appreciate all the wonderful things that make them so special!</li>
+      </ul>
+<img src="https://meowhearthis.files.wordpress.com/2013/03/screen-shot-2013-03-10-at-3-05-51-pm-e1362942440794.png" alt="Kitty">
+	</section>
+	<script>
+		// Get the form element
+		const form = document.querySelector('form');
+
+		// Listen for form submission
+		form.addEventListener('submit', function(event) {
+			event.preventDefault();
+
+			// Get the selected value
+			const selected = document.querySelector('input[name="kitty"]:checked').value;
+
+			// Calculate the results (totally made-up, of course!)
+      let resultPercentage = 0;
+      let winner = '';
+      		if (selected === 'fluffy') {
+			resultPercentage = 70;
+			winner = 'fluffy';
+		} else if (selected === 'spiky') {
+			resultPercentage = 20;
+			winner = 'spiky';
+		} else if (selected === 'striped') {
+			resultPercentage = 10;
+			winner = 'striped';
+		}
+
+		// Update the result and winner spans with the calculated values
+		const resultSpan = document.getElementById('result');
+		const winnerSpan = document.getElementById('winner');
+
+		resultSpan.textContent = `${resultPercentage}%`;
+		winnerSpan.textContent = winner;
+
+		// Reset the form
+		form.reset();
+	});
+</script>
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  form {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+</style>
+
+<div class="container">
+  <form action="#" method="post">
+    <h2>Kitty Survey</h2>
+
+  <label for="name">What's your name?</label>
+  <input type="text" id="name" name="name">
+
+  <label for="age">How old are you?</label>
+  <input type="number" id="age" name="age" min="1" max="120">
+
+  <label for="kitty-love">How much do you love kitties?</label>
+  <select id="kitty-love" name="kitty-love">
+    <option value="a little">A little</option>
+    <option value="a lot">A lot</option>
+    <option value="more than anything">More than anything</option>
+  </select>
+
+  <label for="kitty-quirks">What's the quirkiest thing about your kitty?</label>
+  <textarea id="kitty-quirks" name="kitty-quirks"></textarea>
+
+  <label for="kitty-names">What are your favorite kitty names?</label>
+  <input type="text" id="kitty-names" name="kitty-names">
+
+  <label for="kitty-breed">What breed of kitty do you think is the cutest?</label>
+  <input type="text" id="kitty-breed" name="kitty-breed">
+
+    <input type="submit" value="Submit">
+  </form>
+<div class="tenor-gif-embed" data-postid="19426994" data-share-method="host" data-aspect-ratio="1" data-width="30%"><a href="https://tenor.com/view/pop-pop-cat-pixel-art-pop-pop-pop-nvwm-gif-19426994"></a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+</div>
+</body>
+</html>
