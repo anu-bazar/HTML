@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTO GALLERY</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <h1>MY PHOTOS</h1>
+
+    <p>These are my photos. <a href="collection.com">here.</a><br></p>
+    <br> <a href="https://mistymoon.neocities.org/">HOME</a><br><br>
+ <img src="00000000000.jpg" width=45%> <img src="000313000010.jpg" width=45%> <br>
+    <img src="000024770019.jpg" width=45%> <img src="000000770034.jpg" width=45%> <br>
+    <img src="cp.jpg" width=45%>  <img src="000500000018.jpg" width=45%> <br>
+    <img src="000024000014.jpg" width=45%> <img src="000024770018.jpg" width=45%> <br>
+    <img src="000313530017.jpg" width=45%> <img src="000310030008.jpg" width=45%> <br>
+   <img src="000024000030.jpg" width=45%> <img src="000024770011.jpg" width=45%> <br>
+    <br>
+    <img src="star.gif" class="center"> <img src="star.gif" class="center"><br><br>
+     <img src="000510200019.jpg" width=40%> <img src="000512200024.jpg" width=40%>
+     <br>
+     <img src="000000000023.jpg" width=40%>
+     
+    <br><img src="star.gif" class="center"> <img src="star.gif" class="center"><br>
+  
+    
+ 
+
+
+  </body>
+</html>
